@@ -1,6 +1,38 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="nandhu.css" />
+        <style>
+            ul{
+                list-style-type: none;
+                margin:0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                position: fixed;
+                bottom: 0;
+                width:100%;
+            }
+            li {
+                float: left;
+                border-right: 5px solid #bbb;
+            }
+            li:last-child{
+                float: left;
+                border-right: none;
+            }
+            li a {
+                display:block;
+                color:white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: rgb(255,0,0);
+            }
+            .active {
+                background-color: #04AA6D;
+            }
+            </style>
     </head>
 <body>
     <p><h1>Vertical Navigation Bar</h1></p>

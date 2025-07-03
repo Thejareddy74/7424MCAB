@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            ul{
+                list-style-type: none;
+                margin:0;
+                padding: 0;
+                width: 300px;
+                background-color: #f1f1f1;
+                border: 1px solid #555;
+            }
+            li a {
+                display:block;
+                padding: 8px 16px;
+                color: #000;
+                text-decoration: none;
+            }
+             
+            li {
+              text-align: center;
+              border: 1px solid #555;
+            }
+            li:last-child {
+                border-bottem:none ;
+            }
+            li a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+            li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+            </style>
+    </head>
+<body>
+    <p><h1>Vertical Navigation Bar</h1></p>
+<ul>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+</body>
+</html>
