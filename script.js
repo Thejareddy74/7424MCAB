@@ -77,12 +77,17 @@ if(confirm("are you want to delete this record")){
 
 function isValid(){
 var a=document.getElementById("facName").value;
-// var b = document.getElementById("facDep").value;
-// var c= document.getElementById("facSub").value;
-// var d= document.getElementById("facAge").value;
-// var e= document.getElementById("facPlace").value;
-if(a==""|| a==null ){return false;}
+if(a==""|| a==null ){alert("please enter the Name");return false;}
+var  b = document.getElementById("facDep").value;
+if(b==""|| b==null ){alert("please enter the Dep");return false;}
+var c= document.getElementById("facSub").value;
+if(c==""|| c==null ){alert("please enter the Sub");return false;}
+var d= document.getElementById("facAge").value;
+if(isNaN(d)|| d<18 || d>65){alert("please enter the Age b/w 18 to 65");return false;}
+var e= document.getElementById("facPlace").value;
+if(e==""|| e==null ){alert("please enter the Place");return false;}
 else
 {return true;}
 
 }
+
