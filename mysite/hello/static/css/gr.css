@@ -1,0 +1,15 @@
+.container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+}
+.container > div {
+  background-color: #f1f1f1;
+  border: 1px solid red;
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+  width: auto;
+  height: auto;
+}
