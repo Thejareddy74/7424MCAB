@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Catalog</title>
+    <style>
+        img { width: 200px; height: 200px }
+        .menu { border: 1px solid #ccc; padding: 10px; margin: 10px; display: inline-block; }
+    </style>
+</head>
+<body bgcolor="pink">
+    <h1 align="center"><i>Mother Theresa Institution of Computer applications</i></h1>
+
+    <h1>Canteen Menu</h1>
+    {% for menu in menus %}
+        <div class="menu">
+            {% if menu.image %}
+                <img src="{{ menu.image.url }}" alt="{{ menu.name }}">
+            {% endif %}
+            <h2><a href="{% url 'menu_detail' menu.pk %}">{{ menu.name }}</a></h2>
+            <p>Rs{{ menu.price }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
